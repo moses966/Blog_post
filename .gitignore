@@ -1,0 +1,11 @@
+# Ignore temporary files
+temp/
+
+# Ignore build artifacts
+build/
+
+# Ignore editor-specific files
+.vscode/
+
+# Ignore installed module files
+/venv/**
