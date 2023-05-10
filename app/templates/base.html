@@ -24,6 +24,16 @@
 
 {% block content %}
 <div class="container">
+    {% for message in get_flashed_messages() %}
+    {% if message %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+<div class="container">
     {% block page_content %}{% endblock %}
 </div>
 {% endblock %}
